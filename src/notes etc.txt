@@ -1,0 +1,11 @@
+https://www.emailjs.com/
+Service i.d service_ncqbleg
+TemplateID Email contact form
+public key 5xuTTPIsjZ-5B_W24
+
+picture naming convention 
+category prefix: paintings, earrings, or pet
+
+optional -sold tag at the end
+
+title words separated by hyphens

@@ -1,0 +1,8 @@
+# ✏️ Edit this list to control the display order of painting series.
+# Each line below must exactly match the series folder name (case-insensitive).
+# Lines starting with # are ignored.
+kotuku
+tacloban
+kapai
+tui
+oneoffs

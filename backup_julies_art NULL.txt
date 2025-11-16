@@ -1,0 +1,22 @@
+# --- Julie's Art Project Backup Script ---
+
+# 🔧 CONFIGURATION
+$Source = "C:\Users\OEM\julies-art"    # your main project folder
+$DestinationRoot = "C:\Users\OEM\julies-art_backups"  # where backups will go
+
+# 🕒 Create a timestamp
+$Timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+$BackupName = "julies-art_backup_$Timestamp"
+$Destination = Join-Path $DestinationRoot $BackupName
+
+# 🗂️ Create destination folder if it doesn’t exist
+if (-not (Test-Path $DestinationRoot)) {
+    New-Item -ItemType Directory -Path $DestinationRoot | Out-Null
+}
+
+# 📦 Copy project (excluding node_modules for speed)
+Write-Host "Creating backup at $Destination..."
+robocopy $Source $Destination /E /XD node_modules .git /NFL /NDL /NJH /NJS /nc /ns /np
+
+Write-Host "`n✅ Backup complete: $Destination"
+Pause

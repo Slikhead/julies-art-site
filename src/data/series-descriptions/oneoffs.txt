@@ -1,0 +1,2 @@
+ # Description for oneoff series
+    "One-off works that stand alone — each painting tells its own distinct story through colour and mood.",
