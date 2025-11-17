@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import NavBar from "./components/NavBar";
 import HeroCarousel from "./components/HeroCarousel";
 import Paintings from "./components/Paintings";
-import Earrings from "./components/Earrings";
+import Earrings from "./components/Earrings.jsx";
 import PetPortraits from "./components/PetPortraits";
 import QuirkyCards from "./components/QuirkyCards";
 import Contact from "./components/Contact";
